@@ -1,6 +1,6 @@
 const core = require("@actions/core");
 
-function helloAction() {
+async function helloAction() {
   const whoToGreet = core.getInput("who-to-greet");
   console.log(`Hello ${whoToGreet}!`);
 }
