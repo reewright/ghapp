@@ -11,4 +11,4 @@ jobs:
       - name: Hello
         uses: ./.github/actions/hello
         with:
-          who-to-great: 'Reewright'
+          who-to-greet: 'Reewright'
