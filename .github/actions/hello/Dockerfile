@@ -1,5 +1,5 @@
 FROM node:alpine3.12
-COPY index.js /index.js
-WORKDIR /
+WORKDIR /usr/app
+COPY ./ /usr/app
 RUN npm install
-ENTRYPOINT ["node", "/index.js"]
+ENTRYPOINT ["npm", "start"]
